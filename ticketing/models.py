@@ -34,8 +34,8 @@ class ShowTime(models.Model):
     """
     Represent movie in cinema at specific time
     """
-    movie = models.ForeignKey('Movie', on_delete=models.PROTECT())
-    cinema = models.ForeignKey('Cinema', on_delete=models.PROTECT())
+    movie = models.ForeignKey('Movie', on_delete=models.PROTECT)
+    cinema = models.ForeignKey('Cinema', on_delete=models.PROTECT)
     start_time = models.DateTimeField()
     price = models.IntegerField()
     salable_seats = models.IntegerField()
